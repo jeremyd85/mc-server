@@ -26,7 +26,7 @@ services:
   backups:
     image: itzg/mc-backup
     environment:
-      BACKUP_INTERVAL: "12h"
+      BACKUP_INTERVAL: "24h"
     volumes:
       - ./mc-data:/data:ro
       - ./backups:/backups
