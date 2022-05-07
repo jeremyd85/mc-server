@@ -1,0 +1,4 @@
+minecraft-data/*
+backups/*
+mc-worlds/*
+.env
