@@ -22,6 +22,7 @@ services:
       RCON_PORT: 28016
       VIEW_DISTANCE: 16
       SIMULATION_DISTANCE: 16
+      MEMORY: "12G"
     tty: true
     stdin_open: true
     restart: unless-stopped
