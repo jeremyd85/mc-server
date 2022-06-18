@@ -30,7 +30,16 @@ services:
     image: itzg/mc-backup
     environment:
       BACKUP_INTERVAL: "24h"
+      RCLONE_REMOTE: "remote"
+      RCLONE_COMPRESS_METHOD: gzip
+      DEST_DIR: /backups
+      RCLONE_DEST_DIR: remote:minecraft/backup
+      RCON_HOST: mc
+      RCON_PORT: 28016
+      RCON_PASSWORD: ${RCON_PASSWORD}
+      SERVER_PORT: 25565
     volumes:
+      - ./rclone.conf:/config/rclone/rclone.conf:ro
       - ./mc-data:/data:ro
       - ./backups:/backups
     network_mode: "service:mc"
