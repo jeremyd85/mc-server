@@ -39,7 +39,7 @@ services:
       RCON_PASSWORD: ${RCON_PASSWORD}
       SERVER_PORT: 25565
     volumes:
-      - ./rclone.conf:/config/rclone/rclone.conf:ro
+      - ./rclone-config:/config/rclone:ro
       - ./mc-data:/data:ro
       - ./backups:/backups
     network_mode: "service:mc"
