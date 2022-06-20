@@ -15,7 +15,7 @@ services:
       OPS: "jeremy85"
       ENABLE_WHITELIST: "TRUE"
       ENFORCE_WHITELIST: "TRUE"
-      VERSION: "1.18.1"
+      VERSION: "1.19"
       DIFICULTY: "normal"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
