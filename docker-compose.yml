@@ -15,13 +15,14 @@ services:
       OPS: "jeremy85"
       ENABLE_WHITELIST: "TRUE"
       ENFORCE_WHITELIST: "TRUE"
-      VERSION: "1.19"
+      VERSION: "1.19.2"
       DIFICULTY: "normal"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
       RCON_PORT: 28016
       VIEW_DISTANCE: 16
       SIMULATION_DISTANCE: 16
+      SPAWN_PROTECTION: 0
       MEMORY: "12G"
     tty: true
     stdin_open: true
