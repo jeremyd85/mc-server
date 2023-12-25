@@ -1,5 +1,6 @@
 import argparse
 import dropbox
+import subprocess
 
 
 def backup(args):
@@ -11,7 +12,7 @@ def restore(args):
     pass
 
 def stop(args):
-    pass
+    subprocess.run([''])
 
 def restart(args):
     pass
