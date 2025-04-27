@@ -15,7 +15,7 @@ services:
       OPS: "jeremy85"
       ENABLE_WHITELIST: "TRUE"
       ENFORCE_WHITELIST: "TRUE"
-      VERSION: "1.21"
+      VERSION: "1.21.5"
       DIFICULTY: "normal"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
@@ -37,6 +37,7 @@ services:
       DEST_DIR: /backups
       RCLONE_DEST_DIR: minecraft/backup
       RCON_HOST: mc
+      INITIAL_DELAY: 2m
       RCON_PORT: 28016
       RCON_PASSWORD: ${RCON_PASSWORD}
       SERVER_PORT: 25565
@@ -45,3 +46,5 @@ services:
       - ./mc-data:/data:ro
       - ./backups:/backups
     network_mode: "service:mc"
+volumes:
+  mc-data: {}
